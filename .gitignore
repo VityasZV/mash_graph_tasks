@@ -36,4 +36,7 @@
 
 # build files
 build/
+
+#cmake and make 
+commands/
  

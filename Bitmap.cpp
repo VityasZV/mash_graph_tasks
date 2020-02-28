@@ -2,6 +2,8 @@
 #include <fstream>
 #include <cstring>
 
+namespace BMP {
+
 struct Pixel { unsigned char r, g, b; };
 
 void WriteBMP(const char* fname, Pixel* a_pixelData, int width, int height)
@@ -46,5 +48,7 @@ void SaveBMP(const char* fname, const unsigned int* pixels, int w, int h)
     pixels2[i] = px;
   }
 
-  WriteBMP(fname, &pixels2[0], w, h);
+  WriteBMP(fname, pixels2.data(), w, h);
 }
+
+} //BMP
