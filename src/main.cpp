@@ -5,6 +5,7 @@
 #include <vector>
 #include <unordered_map>
 
+#include "GLFW/glfw3.h"
 #include "Bitmap/Bitmap.h"
 
 const uint32_t RED   = 0x000000FF;
@@ -15,7 +16,7 @@ const int width = 1920, height = 1080;
 int main(int argc, const char** argv)
 {
   std::unordered_map<std::string, std::string> cmdLineParams;
-
+  std::cout << GLFW_KEY_0 << std::endl;
   for(int i=0; i<argc; ++i)
   {
     std::string key(argv[i]);
