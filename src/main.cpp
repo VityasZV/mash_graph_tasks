@@ -5,7 +5,7 @@
 #include <vector>
 #include <unordered_map>
 
-#include "Bitmap.h"
+#include "Bitmap/Bitmap.h"
 
 const uint32_t RED   = 0x000000FF;
 const uint32_t GREEN = 0x0000FF00;
