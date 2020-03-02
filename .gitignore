@@ -36,7 +36,10 @@
 
 # build files
 build/
+cmake-build-debug/
 
 #cmake and make 
 commands/
- 
+
+#dont know what is it but dont think i need it
+.idea/ 
